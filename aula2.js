@@ -37,6 +37,8 @@ db.users.find(
     }
 ).pretty();
 
+db.Users.find().pretty();
+
 // Busca todos os documentos onde a cidade seja "São Paulo"
 // Retorna apenas os campos "name", "state" e "_id"
 db.users.find(
