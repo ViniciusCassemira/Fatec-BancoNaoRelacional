@@ -1,5 +1,5 @@
 //Operadores no mongodb
-use mongo-aula3;
+// use mongo-aula3;
 db.createCollection("produtos");
 
 db.produtos.insertMany([
@@ -31,6 +31,7 @@ db.produtos.insertMany([
 
 //Operadores de comparação
 //- eq, ne, gt, lt, gte, lte
+
 //  SQL     -     MONGO
 //  <              $lt
 //  >              $gt
@@ -38,12 +39,13 @@ db.produtos.insertMany([
 //  <=             $lte
 //  !=             $ne
 //  =              $eq
+
 // SELECT * FROM PRODUTOS WHERE preco = 2500
-// - db.produtos.find({ "preco": { "$eq": 2500 } })
-// - db.produtos.find({ "preco": { "$ne": 4500 } })
-// - db.produtos.find({ "preco": { "$gt": 2000 } })
-// - db.produtos.find({ "preco": { "$lt": 3000 } })
-// - db.produtos.find({ "preco": { "$gte": 1000, "$lte": 3000 } }).pretty()
+db.produtos.find({ "preco": { "$eq": 2500 } })
+db.produtos.find({ "preco": { "$ne": 4500 } })
+db.produtos.find({ "preco": { "$gt": 2000 } })
+db.produtos.find({ "preco": { "$lt": 3000 } })
+db.produtos.find({ "preco": { "$gte": 1000, "$lte": 3000 } }).pretty()
 
 
 //Operadores lógicos
@@ -96,19 +98,19 @@ db.produtos.find({"preco": {"$type": "double"}}).pretty()
 //Exercícios
 
 //1)Utilize o operador $gte para encontrar todos os produtos com preço maior ou igual a 2000
-db.produtos.find({"preco": {"gte": 2000}}).pretty()
+db.produtos.find({"preco": {"$gte": 2000}}).pretty()
 
-//2)Filtre os produtor que pertencem à categoria "Móveis" e possuem avaliação superior a 4.5 usando $and
+//2)Filtre os produtos que pertencem à categoria "Móveis" e possuem avaliação superior a 4.5 usando $and
 db.produtos.find({"$and": [
     {"categoria": "Móveis"},
     {"avaliacao": {"$gt": 4.5}}
 ]}).pretty()
 
-//3)Us $or para retornar todos os produtos que custam menos de 2000 ou têm estoque maior que 20
+//3)Use $or para retornar todos os produtos que custam menos de 2000 ou têm estoque maior que 20
 db.produtos.find({"$or":[
     {"preco": {"$lt": 2000}},
     {"estoque": {"$gt": 20}}
-]})
+]}).pretty()
 
 //4)Escreva uma consuta que retorne apenas os produtos que possuem o campo avaliacao
 db.produtos.find({"avaliacao":{"$exists": true}}).pretty()
