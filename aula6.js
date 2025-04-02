@@ -299,7 +299,9 @@ db.pedido.insertMany([
     }
 ])
  
-// 1-Calcule quantas vendas cada cliente realizou
+//1) Contagem de Vendas por Cliente:
+//Objetivo: Calcular quantas vendas cada cliente realizou.
+//Dica: Use $group com cliente_id.
 db.venda.aggregate([
     {
         $group: { 
@@ -309,7 +311,29 @@ db.venda.aggregate([
     }
 ])
 
-// 3-Listar clientes que compraram mais de 5 produtos
+//2) Determinar a média de vendas para cada tipo de produto.
+//Dica: Agrupe por produto e utilize $avg.
+db.pedido.aggregate([
+    { 
+        $group: { 
+            _id: "$produto",
+            media_venda: { 
+                $avg: { $multiply: ["$quantidade", "$preco_unitario"] } 
+            },
+            total_qnt: { $sum: "$quantidade" }
+        }
+    },
+    {
+        $project: {
+            _id: 1,
+            media_venda: { $divide: ["$media_venda", "$total_qnt"] }
+        }
+    }
+])
+
+//3) Listar Clientes que Compraram Mais de 5 Produtos:
+//Objetivo: Identificar clientes que realizaram grandes pedidos.
+//Dica: Use $match após $group.
 db.pedido.aggregate([
     {
         $lookup: {
@@ -350,7 +374,9 @@ db.pedido.aggregate([
     }
 ])
 
-// 4-Top 3 Produtos Mais Vendidos
+//4) Top 3 Produtos Mais Vendidos:
+//Objetivo: Encontrar os produtos com maior número de vendas.
+//Dica: Agrupe por produto, some quantidade e use $sort seguido de $limit.
 db.pedido.aggregate([
     {
         $group: {
@@ -362,8 +388,9 @@ db.pedido.aggregate([
     { $limit: 3 }
 ])
 
-// 5-Total de vendas por região
-// Não está performático, chama todos os valores de cliente sem necessidade
+//5) Total de Vendas por Região:
+//Objetivo: Se houver um campo regiao em clientes, calcular o total de vendas por região.
+//Dica: Utilize $lookup para unir pedidos e clientes, depois agrupe por regiao.
 db.venda.aggregate([
     {
         $lookup: {
