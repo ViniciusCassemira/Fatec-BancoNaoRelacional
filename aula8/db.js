@@ -228,4 +228,165 @@ db.multa.insertMany([
       local_multa: "Vale da Sofrência"
     }
   ])
+
+db.proprietario.insertMany([
+  {
+    cidade_id: ObjectId("67f68a1455e9a6bf360d2aec"),
+    sexo: { id: 1, descricao: "Masculino" },
+    nome: "Joazim",
+    cpf: "12345678910",
+    logradouro: "Rua dos Multados",
+    numero: "2",
+    complemento: "Casa",
+    bairro: "Centro",
+    cep: "14240000"
+  },
+  {
+    cidade_id: ObjectId("67f68a1455e9a6bf360d2aed"),
+    sexo: { id: 1, descricao: "Masculino" },
+    nome: "Juquinha",
+    cpf: "12354896214",
+    logradouro: "Rua José Bonifácio",
+    numero: "89",
+    complemento: "Comercio",
+    bairro: "Jd. das Trevas",
+    cep: "13240000"
+  },
+  {
+    cidade_id: ObjectId("67f68a1455e9a6bf360d2aee"),
+    sexo: { id: 2, descricao: "Feminino" },
+    nome: "Mariazinha",
+    cpf: "78923578214",
+    logradouro: "Av José Santos",
+    numero: "66",
+    complemento: "Casa",
+    bairro: "Centro",
+    cep: "14240000"
+  },
+  {
+    cidade_id: ObjectId("67f68a1455e9a6bf360d2aef"),
+    sexo: { id: 1, descricao: "Masculino" },
+    nome: "Zezinho",
+    cpf: "96532578921",
+    logradouro: "Rua Antonio dos Santos",
+    numero: "100",
+    complemento: "Casa",
+    bairro: "Quebrada",
+    cep: "12240000"
+  }
+]);
+
+db.veiculo.insertMany([
+  {
+    modelo_id: ObjectId("67f688f955e9a6bf360d2ae6"),
+    proprietario_id: ObjectId("67f7c64f0b4a3a69e96bc8ca"),
+    cor_id: ObjectId("67f69094444e003a6c71b7cc"),
+    placa: "YDX5892",
+    cadastro: "Licenciado"
+  },
+  {
+    modelo_id: ObjectId("67f688f955e9a6bf360d2ae7"),
+    proprietario_id: ObjectId("67f7c64f0b4a3a69e96bc8cb"),
+    cor_id: ObjectId("67f69094444e003a6c71b7cd"),
+    placa: "KYN0169",
+    cadastro: "Licenciado"
+  },
+  {
+    modelo_id: ObjectId("67f688f955e9a6bf360d2aea"),
+    proprietario_id: ObjectId("67f7c64f0b4a3a69e96bc8cc"),
+    cor_id: ObjectId("67f69094444e003a6c71b7cf"),
+    placa: "OKY0101",
+    cadastro: "Licenciado"
+  },
+  {
+    modelo_id: ObjectId("67f688f955e9a6bf360d2ae5"),
+    proprietario_id: ObjectId("67f7c64f0b4a3a69e96bc8cd"),
+    cor_id: ObjectId("67f69094444e003a6c71b7ce"),
+    placa: "YAG0101",
+    cadastro: "Licenciado"
+  }
+]);
+
+db.multa.insertMany([
+    {
+      id_agente: ObjectId("67f68c1455e9a6bf360d2af0"), 
+      id_veiculo: ObjectId("60d5f48e4b9a9a3f94536b9b"), 
+      id_cidade: ObjectId("67f68a1455e9a6bf360d2aed"),  
+      id_infracao: ObjectId("60d5f48e4b9a9a3f94536ba1"),
+      lancamento: "Agente Rodoviário",
+      data_multa: ISODate("2019-02-28T00:22:00"),
+      hora: "00:22",
+      local_multa: "Rua"
+    },
+    {
+      id_agente: ObjectId("67f7c64f0b4a3a69e96bc8ca"), 
+      id_veiculo: ObjectId("60d5f48e4b9a9a3f94536b9b"), 
+      id_cidade: ObjectId("67f68a1455e9a6bf360d2aec"),  
+      id_infracao: ObjectId("60d5f48e4b9a9a3f94536ba1"),
+      lancamento: "Agente Rodoviário",
+      data_multa: ISODate("2018-05-30T13:25:00"),
+      hora: "13:25",
+      local_multa: "Avenida"
+    },
+    {
+      id_agente: ObjectId("67f7c64f0b4a3a69e96bc8ca"), 
+      id_veiculo: ObjectId("60d5f48e4b9a9a3f94536b9c"), 
+      id_cidade: ObjectId("67f68a1455e9a6bf360d2aed"),  
+      id_infracao: ObjectId("60d5f48e4b9a9a3f94536ba2"),
+      lancamento: "Agente Rodoviário",
+      data_multa: ISODate("2019-05-30T14:33:00"),
+      hora: "14:33",
+      local_multa: "Praça do Centro"
+    },
+    {
+      id_agente: ObjectId("67f7c64f0b4a3a69e96bc8cb"), 
+      id_veiculo: ObjectId("60d5f48e4b9a9a3f94536b9d"), 
+      id_cidade: ObjectId("67f68a1455e9a6bf360d2aec"),  
+      id_infracao: ObjectId("60d5f48e4b9a9a3f94536ba3"),
+      lancamento: "Agente Rodoviário",
+      data_multa: ISODate("2017-03-14T15:30:00"),
+      hora: "15:30",
+      local_multa: "Praça José Gomes"
+    },
+    {
+      id_agente: ObjectId("67f7c64f0b4a3a69e96bc8cd"), 
+      id_veiculo: ObjectId("60d5f48e4b9a9a3f94536b9e"), 
+      id_cidade: ObjectId("67f68a1455e9a6bf360d2aee"),  
+      id_infracao: ObjectId("60d5f48e4b9a9a3f94536ba3"),
+      lancamento: "Agente Rodoviário",
+      data_multa: ISODate("2017-12-23T17:18:00"),
+      hora: "17:18",
+      local_multa: "Rua"
+    },
+    {
+      id_agente: ObjectId("67f7c64f0b4a3a69e96bc8ca"), 
+      id_veiculo: ObjectId("60d5f48e4b9a9a3f94536b9d"), 
+      id_cidade: ObjectId("67f68a1455e9a6bf360d2aef"),  
+      id_infracao: ObjectId("60d5f48e4b9a9a3f94536ba3"),
+      lancamento: "Agente Rodoviário",
+      data_multa: ISODate("2016-08-19T09:26:00"),
+      hora: "09:26",
+      local_multa: "Estacionamento"
+    },
+    {
+      id_agente: ObjectId("67f7c64f0b4a3a69e96bc8cb"), 
+      id_veiculo: ObjectId("60d5f48e4b9a9a3f94536b9b"), 
+      id_cidade: ObjectId("67f68a1455e9a6bf360d2aed"),  
+      id_infracao: ObjectId("60d5f48e4b9a9a3f94536ba2"),
+      lancamento: "Agente Rodoviário",
+      data_multa: ISODate("2018-11-15T10:34:00"),
+      hora: "10:34",
+      local_multa: "Praça da Matriz"
+    },
+    {
+      id_agente: ObjectId("67f7c64f0b4a3a69e96bc8cd"), 
+      id_veiculo: ObjectId("60d5f48e4b9a9a3f94536b9b"), 
+      id_cidade: ObjectId("67f68a1455e9a6bf360d2aec"),  
+      id_infracao: ObjectId("60d5f48e4b9a9a3f94536ba3"),
+      lancamento: "Agente Rodoviário",
+      data_multa: ISODate("2019-01-28T15:23:00"),
+      hora: "15:23",
+      local_multa: "Praça de pedágio"
+    }
+  ]);
   
