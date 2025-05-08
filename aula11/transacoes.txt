@@ -1,0 +1,36 @@
+// Iniciar uma sessão
+const session = db.getMongo().startSession();
+
+// Definir as coleções dentro da sessão
+const clientes = session.getDatabase("mongo-aula-11").clientes;
+const pedidos = session.getDatabase("mongo-aula-11").pedidos;
+
+// Iniciar transação
+session.startTransaction();
+
+try {
+  // Operações dentro da transação
+  clientes.updateOne(
+    { nome: "João" },
+    { $set: { status: "inativo" } }
+  );
+
+  pedidos.insertOne({
+    cliente: "João",
+    produto: "Teclado",
+    valor: 200
+  });
+
+  // Confirmar a transação
+  session.commitTransaction();
+  print("Transação concluída com sucesso!");
+  
+} catch (error) {
+  // Reverter em caso de erro
+  session.abortTransaction();
+  print("Erro! Transação cancelada.");
+  
+} finally {
+  // Encerrar a sessão
+  session.endSession();
+}

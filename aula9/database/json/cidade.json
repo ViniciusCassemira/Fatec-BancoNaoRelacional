@@ -1,0 +1,82 @@
+[
+    { "_id": 1, "nome": "Rio Branco", "estado_id": 1 },
+    { "_id": 2, "nome": "Cruzeiro do Sul", "estado_id": 1 },
+  
+    { "_id": 3, "nome": "Maceió", "estado_id": 2 },
+    { "_id": 4, "nome": "Arapiraca", "estado_id": 2 },
+  
+    { "_id": 5, "nome": "Macapá", "estado_id": 3 },
+    { "_id": 6, "nome": "Santana", "estado_id": 3 },
+  
+    { "_id": 7, "nome": "Manaus", "estado_id": 4 },
+    { "_id": 8, "nome": "Parintins", "estado_id": 4 },
+  
+    { "_id": 9, "nome": "Salvador", "estado_id": 5 },
+    { "_id": 10, "nome": "Feira de Santana", "estado_id": 5 },
+  
+    { "_id": 11, "nome": "Fortaleza", "estado_id": 6 },
+    { "_id": 12, "nome": "Caucaia", "estado_id": 6 },
+  
+    { "_id": 13, "nome": "Brasília", "estado_id": 7 },
+    { "_id": 14, "nome": "Gama", "estado_id": 7 },
+  
+    { "_id": 15, "nome": "Vitória", "estado_id": 8 },
+    { "_id": 16, "nome": "Vila Velha", "estado_id": 8 },
+  
+    { "_id": 17, "nome": "Goiânia", "estado_id": 9 },
+    { "_id": 18, "nome": "Aparecida de Goiânia", "estado_id": 9 },
+  
+    { "_id": 19, "nome": "São Luís", "estado_id": 10 },
+    { "_id": 20, "nome": "Imperatriz", "estado_id": 10 },
+  
+    { "_id": 21, "nome": "Cuiabá", "estado_id": 11 },
+    { "_id": 22, "nome": "Várzea Grande", "estado_id": 11 },
+  
+    { "_id": 23, "nome": "Campo Grande", "estado_id": 12 },
+    { "_id": 24, "nome": "Dourados", "estado_id": 12 },
+  
+    { "_id": 25, "nome": "Belo Horizonte", "estado_id": 13 },
+    { "_id": 26, "nome": "Uberlândia", "estado_id": 13 },
+  
+    { "_id": 27, "nome": "Belém", "estado_id": 14 },
+    { "_id": 28, "nome": "Ananindeua", "estado_id": 14 },
+  
+    { "_id": 29, "nome": "Boa Vista", "estado_id": 15 },
+    { "_id": 30, "nome": "Rorainópolis", "estado_id": 15 },
+  
+    { "_id": 31, "nome": "Florianópolis", "estado_id": 16 },
+    { "_id": 32, "nome": "Joinville", "estado_id": 16 },
+  
+    { "_id": 33, "nome": "São Paulo", "estado_id": 17 },
+    { "_id": 34, "nome": "Campinas", "estado_id": 17 },
+  
+    { "_id": 35, "nome": "Aracaju", "estado_id": 18 },
+    { "_id": 36, "nome": "Lagarto", "estado_id": 18 },
+  
+    { "_id": 37, "nome": "Palmas", "estado_id": 19 },
+    { "_id": 38, "nome": "Araguaína", "estado_id": 19 },
+  
+    { "_id": 39, "nome": "Porto Alegre", "estado_id": 20 },
+    { "_id": 40, "nome": "Caxias do Sul", "estado_id": 20 },
+  
+    { "_id": 41, "nome": "Rio de Janeiro", "estado_id": 21 },
+    { "_id": 42, "nome": "Niterói", "estado_id": 21 },
+  
+    { "_id": 43, "nome": "Recife", "estado_id": 22 },
+    { "_id": 44, "nome": "Olinda", "estado_id": 22 },
+  
+    { "_id": 45, "nome": "Teresina", "estado_id": 23 },
+    { "_id": 46, "nome": "Parnaíba", "estado_id": 23 },
+  
+    { "_id": 47, "nome": "Rio Branco", "estado_id": 24 },
+    { "_id": 48, "nome": "Sena Madureira", "estado_id": 24 },
+  
+    { "_id": 49, "nome": "Natal", "estado_id": 25 },
+    { "_id": 50, "nome": "Mossoró", "estado_id": 25 },
+  
+    { "_id": 51, "nome": "Cuiabá", "estado_id": 26 },
+    { "_id": 52, "nome": "Várzea Grande", "estado_id": 26 },
+  
+    { "_id": 53, "nome": "Boa Vista", "estado_id": 27 },
+    { "_id": 54, "nome": "Rorainópolis", "estado_id": 27 }
+  ]  

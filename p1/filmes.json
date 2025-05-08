@@ -1,0 +1,93 @@
+[
+    {
+      "titulo": "Oppenheimer",
+      "ano": 2023,
+      "genero": ["Drama", "Histórico"],
+      "avaliacao": 8.9,
+      "diretor": "Christopher Nolan",
+      "duracao": 180,
+      "premiado": true
+    },
+    {
+      "titulo": "A Origem",
+      "ano": 2010,
+      "genero": ["Ação", "Ficção"],
+      "avaliacao": 8.8,
+      "diretor": "Christopher Nolan",
+      "duracao": 148,
+      "premiado": false
+    },
+    {
+      "titulo": "Matrix",
+      "ano": 1999,
+      "genero": ["Ação", "Ficção"],
+      "avaliacao": 8.7,
+      "diretor": "Wachowski",
+      "duracao": 136,
+      "premiado": true
+    },
+    {
+      "titulo": "Tenet",
+      "ano": 2020,
+      "genero": ["Ação", "Ficção"],
+      "avaliacao": 7.4,
+      "diretor": "Christopher Nolan",
+      "duracao": 150,
+      "premiado": false
+    },
+    {
+      "titulo": "Interestelar",
+      "ano": 2014,
+      "genero": ["Drama", "Ficção"],
+      "avaliacao": 8.6,
+      "diretor": "Christopher Nolan",
+      "duracao": 169,
+      "premiado": true
+    },
+    {
+      "titulo": "Matrix Reloaded",
+      "ano": 2003,
+      "genero": ["Ação", "Ficção"],
+      "avaliacao": 7.2,
+      "diretor": "Wachowski",
+      "duracao": 138,
+      "premiado": false
+    },
+    {
+      "titulo": "Matrix Revolutions",
+      "ano": 2003,
+      "genero": ["Ação", "Ficção"],
+      "avaliacao": 6.8,
+      "diretor": "Wachowski",
+      "duracao": 129,
+      "premiado": false
+    },
+    {
+      "titulo": "Dunkirk",
+      "ano": 2017,
+      "genero": ["Drama", "Guerra"],
+      "avaliacao": 7.9,
+      "diretor": "Christopher Nolan",
+      "duracao": 106,
+      "premiado": true
+    },
+    {
+      "titulo": "Batman: O Cavaleiro das Trevas",
+      "ano": 2008,
+      "genero": ["Ação", "Crime"],
+      "avaliacao": 9.0,
+      "diretor": "Christopher Nolan",
+      "duracao": 152,
+      "premiado": true
+    },
+    {
+      "titulo": "Matrix Resurrections",
+      "ano": 2021,
+      "genero": ["Ação", "Ficção"],
+      "avaliacao": 5.7,
+      "diretor": "Wachowski",
+      "duracao": 148,
+      "premiado": false
+    }
+  ]
+  

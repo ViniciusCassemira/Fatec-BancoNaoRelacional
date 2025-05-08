@@ -1,0 +1,12 @@
+[
+    { "nome": "Ana", "idade": 24, "email": "ana@email.com", "compras": [120, 85], "vip": true },
+    { "nome": "Pedro", "idade": 40, "email": "pedro@email.com", "compras": [300, 100], "vip": false },
+    { "nome": "João", "idade": 35, "email": "joao@email.com", "compras": [], "vip": false },
+    { "nome": "Clara", "idade": 28, "email": "clara@email.com", "compras": [150], "vip": true },
+    { "nome": "Lucas", "idade": 30, "email": "lucas@email.com", "compras": [200, 50], "vip": false },
+    { "nome": "Ana", "idade": 24, "email": "ana2@email.com", "compras": [90, 60], "vip": true },
+    { "nome": "Pedro", "idade": 40, "email": "pedro2@email.com", "compras": [500], "vip": true },
+    { "nome": "Mariana", "idade": 22, "email": "mariana@email.com", "compras": [75], "vip": false },
+    { "nome": "João", "idade": 35, "email": "joao2@email.com", "compras": [40, 60], "vip": false },
+    { "nome": "Clara", "idade": 28, "email": "clara2@email.com", "compras": [], "vip": false }
+  ]

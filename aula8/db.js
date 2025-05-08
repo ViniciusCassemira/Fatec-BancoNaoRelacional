@@ -195,39 +195,7 @@ db.veiculo.insertMany([
     }
 ]);
 
-db.createCollection("multa");
-db.multa.insertMany([
-    {
-      agente_id: ObjectId("67f67d4755e9a6bf360d2ae4"),
-      veiculo_id: ObjectId("67f6919f444e003a6c71b7d0"),
-      cidade_id: ObjectId("67f68a1455e9a6bf360d2aee"),
-      infracao_id: ObjectId("67f67b2455e9a6bf360d2add"),
-      lancamento: "Condutor sem vergonha",
-      data_multa: ISODate("2018-12-30T00:00:00Z"),
-      hora: "00:22",
-      local_multa: "Praça do Centro"
-    },
-    {
-      agente_id: ObjectId("67f67d4755e9a6bf360d2ae2"),
-      veiculo_id: ObjectId("67f6919f444e003a6c71b7d0"),
-      cidade_id: ObjectId("67f68a1455e9a6bf360d2aed"),
-      infracao_id: ObjectId("67f67b2455e9a6bf360d2ade"),
-      lancamento: "Com camisa do vasco",
-      data_multa: ISODate("2018-12-31T00:00:00Z"),
-      hora: "08:15",
-      local_multa: "Avenida do rio"
-    },
-    {
-      agente_id: ObjectId("67f67d4755e9a6bf360d2ae3"),
-      veiculo_id: ObjectId("67f6919f444e003a6c71b7d0"),
-      cidade_id: ObjectId("67f68a1455e9a6bf360d2aec"),
-      infracao_id: ObjectId("67f67b2455e9a6bf360d2ade"),
-      lancamento: "Tocando música que machuca o coração",
-      data_multa: ISODate("2018-12-31T00:00:00Z"),
-      hora: "11:30",
-      local_multa: "Vale da Sofrência"
-    }
-  ])
+3
 
 db.proprietario.insertMany([
   {
